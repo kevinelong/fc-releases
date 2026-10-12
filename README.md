@@ -44,4 +44,10 @@ No setup, no syntax to memorize.
 - What changed in each build: [CHANGELOG.md](./CHANGELOG.md)
 - Privacy policy: <https://codeonline.io/privacy/>
 
-MIT licensed. Made by [Kevin Long](https://www.linkedin.com/in/kevinelong/).
+## License
+
+Source-available under the **[Functional Source License 1.1](./LICENSE)** (`FSL-1.1-MIT`):
+use the app for anything except a product or service that competes with fc, and each release
+converts to the MIT license two years after it is published. Using it in a classroom, at home
+or inside a company is squarely within the grant. Made by
+[Kevin Long](https://www.linkedin.com/in/kevinelong/).
