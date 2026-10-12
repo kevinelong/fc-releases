@@ -1,5 +1,7 @@
 # fc — the plain-English fantasy console, for Android
 
+![fc — games in plain English](banner.png)
+
 Make little games by writing **plain English**. fc is a fantasy console that runs in your
 browser and ships as a small Android app: type a few lines — `player is centered sprite`,
 `when player picks up any coin, increase score by 1` — and a real game runs.
@@ -39,6 +41,7 @@ No setup, no syntax to memorize.
 ## Links
 
 - Source code, documentation and the full language reference: <https://github.com/kevinelong/fc>
+- What changed in each build: [CHANGELOG.md](./CHANGELOG.md)
 - Privacy policy: <https://codeonline.io/privacy/>
 
 MIT licensed. Made by [Kevin Long](https://www.linkedin.com/in/kevinelong/).
