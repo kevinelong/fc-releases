@@ -20,10 +20,20 @@ No setup, no syntax to memorize.
 
 ## Release assets
 
-Each release carries the two binaries plus `SHA256SUMS.txt`. The numbers below are the contract —
-`bash verify-release.sh` re-downloads everything and checks every one of them against what is
-actually served, and `bash verify-release.sh --dir <dir>` does the same for files you have already
-downloaded. Change a release and these numbers (and the script's expectations) move with it.
+Each release carries the two binaries plus `SHA256SUMS.txt`. The numbers below are the contract:
+
+```bash
+bash verify-release.sh              # the newest published release (downloads ~100 MB and checks it)
+bash verify-release.sh v1.0.3-4     # a named tag
+bash verify-release.sh --dir <dir>  # files already downloaded, no network
+```
+
+It asserts that all three agree — this table, `SHA256SUMS.txt`, and the bytes the release actually
+serves (byte count and sha256) — and that the release carries nothing this page does not document.
+Exit 0 means a stranger who downloads these files gets exactly what is described here; anything
+else exits non-zero and names the file and the two numbers that differ. It is deliberately not in
+CI (it needs the network and 100 MB of binaries), so run it after any release, or whenever you want
+to know the download page is still true. Change a release and these numbers move with it.
 
 | asset | bytes | sha256 |
 |---|---|---|
