@@ -18,6 +18,22 @@ No setup, no syntax to memorize.
 - **Upgrading from the older app (1.0.2)?** Uninstall it first. This build is signed with a
   new key, so Android cannot replace the old copy in place.
 
+## Release assets
+
+Each release carries the two binaries plus `SHA256SUMS.txt`. The numbers below are the contract —
+`bash verify-release.sh` re-downloads everything and checks every one of them against what is
+actually served, and `bash verify-release.sh --dir <dir>` does the same for files you have already
+downloaded. Change a release and these numbers (and the script's expectations) move with it.
+
+| asset | bytes | sha256 |
+|---|---|---|
+| `app-release.apk` | 49,526,430 | `088073bb2aaf5cbe51568ff432d915988b29e8b28f0b7287a3fc7cae7e8135b2` |
+| `app-release.aab` | 49,214,659 | `d565ed89c5b5820afa8d60115697690657a85486d2757622c2b3d3ff7e837914` |
+
+These are release **`v1.0.3-4`** (12 October 2026): `versionCode` 4, `versionName` 1.0.3, signed
+`CN=fc`. The Android App Bundle is for the Play listing; for a phone, use the APK.
+
+
 ## What is in the app
 
 - The full editor, with your program re-running as you type
